@@ -55,6 +55,7 @@ if(HAS_SOCKLEN_T)
     add_definitions(-DHAS_SOCKLEN_T=1)
 endif()
 
+SET(CMAKE_INCLUDE_DIRECTORIES_BEFORE ON)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set(INCLUDE_FILES_PREFIX include/enet)
